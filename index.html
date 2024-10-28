@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
     <title>Marché JS - ViniciusN</title>
     <meta name="author" content="Vinicius Nascimento">
     <meta name="description" content="Exercice 1 de Vinicius Nascimento. Elève en Informatique de l'ENSICAEN">
@@ -26,90 +26,94 @@
     <td>
       <div class="imgBx">
         <a href="#" onclick="choice('pommes')">
-          <img src="assets/imagens/pommes.png" alt="Pomme">
+          <img src="assets/imagens/pommes.jpeg" alt="Pomme">
         </a>
       </div>
     </td>
     <td>
       <div class="imgBx">
-        <a href="#" onclick="choice('croissaint')">
-          <img src="assets/imagens/croissaint.jpeg" alt="Croissaint">
+        <a href="#" onclick="choice('croissant')">
+          <img src="assets/imagens/croissant.jpg" alt="Croissant">
         </a>
       </div>
     </td>
     <td>
       <div class="imgBx">
-        <a href="#" onclick="choice('boef')">
-          <img src="assets/imagens/boef.png" alt="Boef">
+        <a href="#" onclick="choice('boeuf')">
+          <img src="assets/imagens/boeuf.jpg" alt="Boef">
         </a>
       </div>
     </td>
   </tr>
   <tr>
-    <td>1.00 €</td>
-    <td>0.50 €</td>
-    <td>10.00 €</td>
+    <td>1.00€/Kg de Pommes</td>
+    <td>0.50€/Un de Croissant</td>
+    <td>10.00€/Kg de Boeuf</td>
   </tr>
   <tr>
     <td>
       <div class="imgBx">
         <a href="#" onclick="choice('banane')">
-          <img src="assets/imagens/banane.png" alt="Banane">
+          <img src="assets/imagens/banane.jpg" alt="Banane">
         </a>
       </div>
     </td>
     <td>
       <div class="imgBx">
         <a href="#" onclick="choice('painauchocolat')">
-          <img src="assets/imagens/pain au chocolat.jpg" alt="Pain au Chocolat">
+          <img src="assets/imagens/painauchocolat.jpg" alt="Pain au Chocolat">
         </a>
       </div>
     </td>
     <td>
       <div class="imgBx">
         <a href="#" onclick="choice('agneau')">
-          <img src="assets/imagens/agneau.png" alt="Agneau">
+          <img src="assets/imagens/agneau.jpeg" alt="Agneau">
         </a>
       </div>
     </td>
   </tr>
   <tr>
-    <td>1.20 €</td>
-    <td>0.80 €</td>
-    <td>15.00 €</td>
+    <td>1.20€/Kg de Banane</td>
+    <td>0.80€/Un de Pain au Chocolat</td>
+    <td>15.00€/Kg de Agneau</td>
   </tr>
   <tr>
     <td>
       <div class="imgBx">
         <a href="#" onclick="choice('ananas')">
-          <img src="assets/imagens/ananas.png" alt="Ananas">
+          <img src="assets/imagens/ananas.jpeg" alt="Ananas">
         </a>
       </div>
     </td>
     <td>
       <div class="imgBx">
         <a href="#" onclick="choice('baguette')">
-          <img src="assets/imagens/baguette.jpg" alt="Baguettes">
+          <img src="assets/imagens/baguettes.jpg" alt="Baguettes">
         </a>
       </div>
     </td>
     <td>
       <div class="imgBx">
         <a href="#" onclick="choice('porc')">
-          <img src="assets/imagens/porc.png" alt="Porc">
+          <img src="assets/imagens/pork.jpg" alt="Porc">
         </a>
       </div>
     </td>
   </tr>
   <tr>
-    <td>4.00 €</td>
-    <td>1.00 €</td>
-    <td>7.00 €</td>
+    <td>4.00€/Kg de Ananas</td>
+    <td>1.00€/Un de Baguette</td>
+    <td>7.00€/Kg de Porc</td>
   </tr>
 </table>
 
 <div class="generaltext">
-  <p>Quand vous avez terminé, vous pouvez payer. Si vous cliquez sur "Ok", vous règlez la note et vous pouvez recommancer un nouveau marché. Si vous cliquez sur "Cancel" vous continuez le marché courant.</p>
+  <p>Quand vous avez terminé, vous pouvez <a href="#" onclick="pay()">payer</a>. Si vous cliquez sur "Ok", vous règlez la note et vous pouvez recommancer un nouveau marché. Si vous cliquez sur "Cancel" vous continuez le marché courant.</p>
+</div>
+
+<div class="generaltext">
+    <p>Pour voir votre <a href="#" onclick="viewCart()">panier</a>, cliquez ici.</p>
 </div>
 
 </body>
