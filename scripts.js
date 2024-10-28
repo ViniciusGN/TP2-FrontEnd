@@ -27,7 +27,7 @@ function viewCart() {
     alert(cartContents);
 }
 
-function makePayment() {
+function pay() {
     if (total === 0) {
         alert("Votre panier est vide !");
     } else {
